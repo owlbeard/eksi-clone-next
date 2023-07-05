@@ -1,0 +1,77 @@
+[
+  { "channel": "music", "name": "pena", "entryCount": 123, "hot": true },
+  { "channel": "music", "name": "sourtimes", "entryCount": 23, "hot": true },
+  {
+    "channel": "politics",
+    "name": "government for and by the people",
+    "entryCount": 456,
+    "hot": true
+  },
+  {
+    "channel": "tech",
+    "name": "the odin project",
+    "entryCount": 45,
+    "hot": true
+  },
+  { "channel": "tech", "name": "react", "entryCount": 67, "hot": true },
+  { "channel": "tech", "name": "javascript", "entryCount": 234, "hot": true },
+  { "channel": "tech", "name": "html", "entryCount": 121, "hot": true },
+  { "channel": "tech", "name": "tailwind css", "entryCount": 98, "hot": true },
+  { "channel": "tech", "name": "webpack", "entryCount": 76, "hot": true },
+  { "channel": "tech", "name": "git", "entryCount": 156, "hot": true },
+  {
+    "channel": "relationships",
+    "name": "how to relate",
+    "entryCount": 187,
+    "hot": true
+  },
+  { "channel": "sports", "name": "besiktas", "entryCount": 56, "hot": true },
+  {
+    "channel": "sports",
+    "name": "super league 2023 champions",
+    "entryCount": 87,
+    "hot": true
+  },
+  {
+    "channel": "politics",
+    "name": "2023 elections",
+    "entryCount": 39,
+    "hot": true
+  },
+  {
+    "channel": "politics",
+    "name": "don't trust the politicians",
+    "entryCount": 139,
+    "hot": true
+  },
+  {
+    "channel": "relationships",
+    "name": "relationship tips and tricks",
+    "entryCount": 48,
+    "hot": true
+  },
+  {
+    "channel": "sports",
+    "name": "novak djokovic",
+    "entryCount": 92,
+    "hot": true
+  },
+  {
+    "channel": "relationships",
+    "name": "how to impress your date",
+    "entryCount": 65,
+    "hot": true
+  },
+  {
+    "channel": "sports",
+    "name": "june 4th 2023 galatasaray - fenerbahce match",
+    "entryCount": 121,
+    "hot": true
+  },
+  {
+    "channel": "politics",
+    "name": "swordhandler versus soldierborn",
+    "entryCount": 74,
+    "hot": true
+  }
+]
