@@ -19,9 +19,7 @@ export default function RootLayout({
         <div className="w-screen h-1 bg-sour fixed"></div>
         <div className="container">
           <Header />
-          <main className="main flex min-h-screen flex-col items-center">
-            {children}
-          </main>
+          <main className="main flex min-h-screen flex-col">{children}</main>
           <Footer />
         </div>
       </body>

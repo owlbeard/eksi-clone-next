@@ -20,6 +20,9 @@ module.exports = {
         sourLink: '#53a245',
         sourThings: '#55cbe2',
         sourFormBorder: '#494949',
+        sourButtonHover: '#68a138',
+        sourButtonHoverBorder: '#57872e',
+        sourButtonBorder: '#74b43e',
       },
       height: {
         sourLeftHeight: '88%',

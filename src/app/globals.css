@@ -6,10 +6,19 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+input {
+  color: black;
+}
 
-#magnify {
+#magnify,
+#alert {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
     contrast(103%);
+}
+
+#check {
+  filter: invert(76%) sepia(15%) saturate(1563%) hue-rotate(48deg)
+    brightness(89%) contrast(90%);
 }
 
 /* clears the ‘X’ from Internet Explorer */
@@ -33,7 +42,7 @@ input[type='search']::-webkit-search-results-decoration {
 
 .main {
   margin-left: 240px;
-  padding-top: 120px;
+  padding-top: 145px;
 }
 
 @media handheld, only screen and (max-width: 1265px) {

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Indexes from './Indexes';
 
 type NavbarProps = {
@@ -11,6 +11,26 @@ type NavbarProps = {
 
 export default function Navbar({ width }: NavbarProps) {
   const [open, setOpen] = useState(false);
+  const popupRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const main = document.querySelector('.main');
+    main!.addEventListener('click', (e: any) => handleClick(e));
+  }, [open]);
+  const handleClick = (e: MouseEvent) => {
+    const navElement = popupRef.current;
+    if (open === true && navElement) {
+      const dialogDimensions = navElement.getBoundingClientRect();
+      if (
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom
+      ) {
+        setOpen(false);
+        document.body.classList.remove('stopScroll');
+      }
+    }
+  };
   return (
     <nav className="flex justify-between items-center text-xs md:font-bold">
       <Link
@@ -83,35 +103,68 @@ export default function Navbar({ width }: NavbarProps) {
             ...
           </button>
           {open && (
-            <div className="text-sm absolute top-full left-0 float-left flex flex-col gap-2 p-2 border border-sourFormBorder">
-              <Link className="px-4" href={'/basliklar/tarihte-bugun'}>
+            <div
+              ref={popupRef}
+              className="text-sm absolute top-full left-0 float-left flex flex-col text-center border border-sourFormBorder w-36"
+            >
+              <Link
+                className="w-full p-2 hover:bg-sourBottomBorder"
+                href={'/basliklar/tarihte-bugun'}
+              >
                 tarihte bugün
               </Link>
-              <Link className="px-4" href={'/basliklar/kanal/seyahat'}>
+              <Link
+                className="w-full p-2 hover:bg-sourBottomBorder"
+                href={'/basliklar/kanal/seyahat'}
+              >
                 #seyahat
               </Link>
-              <Link className="px-4" href={'/basliklar/kanal/muzik'}>
+              <Link
+                className="w-full p-2 hover:bg-sourBottomBorder"
+                href={'/basliklar/kanal/muzik'}
+              >
                 #müzik
               </Link>
-              <Link className="px-4" href={'/basliklar/kanal/tv'}>
+              <Link
+                className="w-full p-2 hover:bg-sourBottomBorder"
+                href={'/basliklar/kanal/tv'}
+              >
                 #tv
               </Link>
-              <Link className="px-4" href={'/basliklar/kanal/haber'}>
+              <Link
+                className="w-full p-2 hover:bg-sourBottomBorder"
+                href={'/basliklar/kanal/haber'}
+              >
                 #haber
               </Link>
-              <Link className="px-4" href={'/basliklar/kanal/bilim'}>
+              <Link
+                className="w-full p-2 hover:bg-sourBottomBorder"
+                href={'/basliklar/kanal/bilim'}
+              >
                 #bilim
               </Link>
-              <Link className="px-4" href={'/basliklar/kanal/edebiyat'}>
+              <Link
+                className="w-full p-2 hover:bg-sourBottomBorder"
+                href={'/basliklar/kanal/edebiyat'}
+              >
                 #edebiyat
               </Link>
-              <Link className="px-4" href={'/basliklar/kanal/ekonomi'}>
+              <Link
+                className="w-full p-2 hover:bg-sourBottomBorder"
+                href={'/basliklar/kanal/ekonomi'}
+              >
                 #ekonomi
               </Link>
-              <Link className="px-4" href={'/basliklar/basiboslar'}>
+              <Link
+                className="w-full p-2 hover:bg-sourBottomBorder"
+                href={'/basliklar/basiboslar'}
+              >
                 başıboşlar
               </Link>
-              <Link className="px-4" href={'/basliklar/kanallar'}>
+              <Link
+                className="w-full p-2 hover:bg-sourBottomBorder"
+                href={'/basliklar/kanallar'}
+              >
                 tüm kanallar
               </Link>
             </div>

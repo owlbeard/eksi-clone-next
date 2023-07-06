@@ -4,22 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import Navbar from './Navbar';
+import useDeviceSize from '@/hooks/useDeviceSize';
 
 export default function Header() {
   const [form, setForm] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleWindowResize);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowResize);
-    };
-  }, []);
+  const [width] = useDeviceSize();
   useEffect(() => {
     const main = document.querySelector('.main');
     main!.addEventListener('click', (e: any) => handleClick(e));
@@ -40,10 +30,10 @@ export default function Header() {
     }
   };
   return (
-    <header className="container fixed flex flex-col gap-4 z-50 bg-sourBG mt-5">
+    <header className="container fixed flex flex-col gap-4 z-50 bg-sourBG pt-5 top-1">
       <div className=" flex gap-4 items-center">
         <div className="md:w-48 xl:w-60 p-1">
-          {windowWidth >= 450 ? (
+          {width >= 450 ? (
             <Link className="flex" href={'/'}>
               <Image
                 src="https://ekstat.com/img/new-design/eksisozluk_logo_darktheme.svg"
@@ -161,7 +151,7 @@ export default function Header() {
           <Link href={'/kayit'}>kayıt ol</Link>
         </div>
       </div>
-      <Navbar width={windowWidth} />
+      <Navbar width={width} />
     </header>
   );
 }
