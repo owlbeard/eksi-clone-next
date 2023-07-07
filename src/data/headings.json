@@ -1,77 +1,92 @@
 [
-  { "channel": "music", "name": "pena", "entryCount": 123, "hot": true },
-  { "channel": "music", "name": "sourtimes", "entryCount": 23, "hot": true },
+  { "channel": "müzik", "name": "pena", "entryCount": 123, "hot": true },
+  { "channel": "müzik", "name": "sourtimes", "entryCount": 23, "hot": true },
   {
-    "channel": "politics",
-    "name": "government for and by the people",
+    "channel": "siyaset",
+    "name": "halk için halka rağmen",
     "entryCount": 456,
     "hot": true
   },
   {
-    "channel": "tech",
+    "channel": "programlama",
     "name": "the odin project",
     "entryCount": 45,
     "hot": true
   },
-  { "channel": "tech", "name": "react", "entryCount": 67, "hot": true },
-  { "channel": "tech", "name": "javascript", "entryCount": 234, "hot": true },
-  { "channel": "tech", "name": "html", "entryCount": 121, "hot": true },
-  { "channel": "tech", "name": "tailwind css", "entryCount": 98, "hot": true },
-  { "channel": "tech", "name": "webpack", "entryCount": 76, "hot": true },
-  { "channel": "tech", "name": "git", "entryCount": 156, "hot": true },
+  { "channel": "programlama", "name": "react", "entryCount": 67, "hot": true },
   {
-    "channel": "relationships",
-    "name": "how to relate",
+    "channel": "programlama",
+    "name": "javascript",
+    "entryCount": 234,
+    "hot": true
+  },
+  { "channel": "programlama", "name": "html", "entryCount": 121, "hot": true },
+  {
+    "channel": "programlama",
+    "name": "tailwind css",
+    "entryCount": 98,
+    "hot": true
+  },
+  {
+    "channel": "programlama",
+    "name": "webpack",
+    "entryCount": 76,
+    "hot": true
+  },
+  {
+    "channel": "siyaset",
+    "name": "7 temmuz 2023 vergi zammı yağmuru",
+    "entryCount": 1298,
+    "hot": true
+  },
+  { "channel": "programlama", "name": "git", "entryCount": 156, "hot": true },
+  {
+    "channel": "ilişkiler",
+    "name": "nasıl ilişki kurulur",
     "entryCount": 187,
     "hot": true
   },
-  { "channel": "sports", "name": "besiktas", "entryCount": 56, "hot": true },
+  { "channel": "spor", "name": "besiktas", "entryCount": 56, "hot": true },
   {
-    "channel": "sports",
-    "name": "super league 2023 champions",
+    "channel": "spor",
+    "name": "stsl süper lig 2024 şampiyonu",
     "entryCount": 87,
     "hot": true
   },
   {
-    "channel": "politics",
-    "name": "2023 elections",
+    "channel": "siyaset",
+    "name": "kemal kılıçdaroğlu istifa",
     "entryCount": 39,
     "hot": true
   },
   {
-    "channel": "politics",
-    "name": "don't trust the politicians",
+    "channel": "siyaset",
+    "name": "neden politikacılara güvenmemeliyiz",
     "entryCount": 139,
     "hot": true
   },
   {
-    "channel": "relationships",
-    "name": "relationship tips and tricks",
+    "channel": "ilişkiler",
+    "name": "ilişki ipuçları ve püf noktaları",
     "entryCount": 48,
     "hot": true
   },
   {
-    "channel": "sports",
+    "channel": "spor",
     "name": "novak djokovic",
     "entryCount": 92,
     "hot": true
   },
   {
-    "channel": "relationships",
-    "name": "how to impress your date",
+    "channel": "ilişkiler",
+    "name": "eşşek gibi soğanlı dürüm yedim akşamki dateimi unutup",
     "entryCount": 65,
     "hot": true
   },
   {
-    "channel": "sports",
-    "name": "june 4th 2023 galatasaray - fenerbahce match",
+    "channel": "spor",
+    "name": "novak cokoviçin goat olması gerçeği",
     "entryCount": 121,
-    "hot": true
-  },
-  {
-    "channel": "politics",
-    "name": "swordhandler versus soldierborn",
-    "entryCount": 74,
     "hot": true
   }
 ]

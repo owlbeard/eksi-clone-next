@@ -1,0 +1,110 @@
+[
+  {
+    "name": "#haber",
+    "description": "yurtta ve dünyada olan biten"
+  },
+  {
+    "name": "#sinema",
+    "description": "filmler, yönetmenler, teknikler, yarıda salonu terk etmeler"
+  },
+  {
+    "name": "#bilim",
+    "description": "atom mühendisliğine giden yolda her konu"
+  },
+  {
+    "name": "#eğitim",
+    "description": "akademi, müfredat, hocalar ve dersler"
+  },
+  {
+    "name": "#spoiler",
+    "description": "bozan, heves kaçıran her türlü bilgi. bu arada bruce willis ölüymüş."
+  },
+  {
+    "name": "#müzik",
+    "description": "gruplar, parçalar, müzik teorileri, enstrümanlar, pena"
+  },
+  {
+    "name": "#edebiyat",
+    "description": "kitaplar, yazarlar, ekoller, yayıncılar, ödüller ve niceleri"
+  },
+  {
+    "name": "#ekonomi",
+    "description": "finans, yatırım araçları, krizler, bankalar, parasal göstergeler"
+  },
+  {
+    "name": "#tarih",
+    "description": "geçmişten günümüze hayatlar, insanlar"
+  },
+  {
+    "name": "#yeme-içme",
+    "description": "restoranlar, mekanlar, yemekler ve yanında içilecekler"
+  },
+  {
+    "name": "#ilişkiler",
+    "description": "sevgili, eski sevgili ve hoşlanılan kız"
+  },
+  {
+    "name": "#teknoloji",
+    "description": "cihazlar, yazılımlar, standartlar, mavi ekran"
+  },
+  {
+    "name": "#siyaset",
+    "description": "partiler, politikacılar, terör, savaş kan ve korku"
+  },
+  {
+    "name": "#sanat",
+    "description": "teoriler, sanatçılar, sanat tarihi, ucubeler"
+  },
+  {
+    "name": "#moda",
+    "description": "giyim, kuşam, takıp takıştırma"
+  },
+  {
+    "name": "#otomotiv",
+    "description": "araba markaları, modelleri, konseptler, jargon"
+  },
+  {
+    "name": "#magazin",
+    "description": "normalde kimseyi ilgilendirmeyen ama içinde sırf ünlü var diye anlamlı olan saçma şeyler"
+  },
+  {
+    "name": "#ekşi-sözlük",
+    "description": "bizzat ekşi sözlük hakkında"
+  },
+  {
+    "name": "#spor",
+    "description": "futbol, basketbol, tenis ve curling gibi ata sporları"
+  },
+  {
+    "name": "#motosiklet",
+    "description": "motorculuk dünyası, markalar, modeller, kulüpler"
+  },
+  {
+    "name": "#sağlık",
+    "description": "rahatsızlıklar, hastalıklar, ilaçlar, tedaviler, anatomi, hurafeler"
+  },
+  {
+    "name": "#oyun",
+    "description": "video oyunları, konsollar, oyuncular, efsaneler, atari"
+  },
+  {
+    "name": "#anket",
+    "description": "subjektif cevap yığınları"
+  },
+  {
+    "name": "#programlama",
+    "description": "yazılım geliştirme jargonu, araçları, teknikler, atasözleri"
+  },
+  {
+    "name": "#tv",
+    "description": "tv kanalları, diziler, yarışmalar"
+  },
+  {
+    "name": "#seyahat",
+    "description": "gezilecek, görülecek yerlerle ilgili her şey"
+  },
+  {
+    "name": "#havacılık",
+    "description": "hava taşıtlarıyla ilgili aklınıza ne gelirse"
+  }
+]

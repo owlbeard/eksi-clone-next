@@ -50,3 +50,17 @@ input[type='search']::-webkit-search-results-decoration {
     margin-left: 192px;
   }
 }
+
+#headings::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#headings::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+#headings::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #202020;
+}

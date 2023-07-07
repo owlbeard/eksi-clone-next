@@ -23,6 +23,8 @@ module.exports = {
         sourButtonHover: '#68a138',
         sourButtonHoverBorder: '#57872e',
         sourButtonBorder: '#74b43e',
+        sourChannelButton: '#202020',
+        sourChannelButtonHover: '#474747',
       },
       height: {
         sourLeftHeight: '88%',

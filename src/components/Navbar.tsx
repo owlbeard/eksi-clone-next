@@ -10,6 +10,7 @@ type NavbarProps = {
 };
 
 export default function Navbar({ width }: NavbarProps) {
+  const [channel, setChannel] = useState('gündem');
   const [open, setOpen] = useState(false);
   const popupRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -33,50 +34,50 @@ export default function Navbar({ width }: NavbarProps) {
   };
   return (
     <nav className="flex justify-between items-center text-xs md:font-bold">
-      <Link
+      <button
         className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
-        href={'/basliklar/gundem'}
+        onClick={() => setChannel('gündem')}
       >
         gündem
-      </Link>
-      <Link
+      </button>
+      <button
         className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
-        href={'/debe'}
+        onClick={() => setChannel('debe')}
       >
         debe
-      </Link>
+      </button>
       {width >= 768 ? (
         <>
-          <Link
+          <button
             className="px-4 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
-            href={'/basliklar/sorunsallar'}
+            onClick={() => setChannel('sorunsallar')}
           >
             sorunsallar
-          </Link>
-          <Link
+          </button>
+          <button
             className="px-4 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
-            href={'/basliklar/kanal/spor'}
+            onClick={() => setChannel('spor')}
           >
             #spor
-          </Link>
-          <Link
+          </button>
+          <button
             className="px-4 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
-            href={'/basliklar/kanal/iliskiler'}
+            onClick={() => setChannel('ilişkiler')}
           >
             #ilişkiler
-          </Link>
-          <Link
+          </button>
+          <button
             className="px-4 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
-            href={'/basliklar/kanal/siyaset'}
+            onClick={() => setChannel('siyaset')}
           >
             #siyaset
-          </Link>
+          </button>
         </>
       ) : (
         <>
           <Link
             className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
-            href={'/basliklar/kanallar'}
+            href={'/kanallar'}
           >
             kanallar
           </Link>
@@ -107,63 +108,63 @@ export default function Navbar({ width }: NavbarProps) {
               ref={popupRef}
               className="text-sm absolute top-full left-0 float-left flex flex-col text-center border border-sourFormBorder w-36"
             >
-              <Link
+              <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                href={'/basliklar/tarihte-bugun'}
+                onClick={() => setChannel('tarihte bugün')}
               >
                 tarihte bugün
-              </Link>
-              <Link
+              </button>
+              <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                href={'/basliklar/kanal/seyahat'}
+                onClick={() => setChannel('seyahat')}
               >
                 #seyahat
-              </Link>
-              <Link
+              </button>
+              <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                href={'/basliklar/kanal/muzik'}
+                onClick={() => setChannel('müzik')}
               >
                 #müzik
-              </Link>
-              <Link
+              </button>
+              <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                href={'/basliklar/kanal/tv'}
+                onClick={() => setChannel('tv')}
               >
                 #tv
-              </Link>
-              <Link
+              </button>
+              <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                href={'/basliklar/kanal/haber'}
+                onClick={() => setChannel('haber')}
               >
                 #haber
-              </Link>
-              <Link
+              </button>
+              <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                href={'/basliklar/kanal/bilim'}
+                onClick={() => setChannel('bilim')}
               >
                 #bilim
-              </Link>
-              <Link
+              </button>
+              <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                href={'/basliklar/kanal/edebiyat'}
+                onClick={() => setChannel('edebiyat')}
               >
                 #edebiyat
-              </Link>
-              <Link
+              </button>
+              <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                href={'/basliklar/kanal/ekonomi'}
+                onClick={() => setChannel('ekonomi')}
               >
                 #ekonomi
-              </Link>
-              <Link
+              </button>
+              <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                href={'/basliklar/basiboslar'}
+                onClick={() => setChannel('başıboşlar')}
               >
                 başıboşlar
-              </Link>
+              </button>
               <Link
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                href={'/basliklar/kanallar'}
+                href={'/kanallar'}
               >
                 tüm kanallar
               </Link>
@@ -214,7 +215,7 @@ export default function Navbar({ width }: NavbarProps) {
           ></Image>
         )}
       </Link>
-      {width >= 850 && <Indexes width={width} />}
+      {width >= 850 && <Indexes width={width} channel={channel} />}
     </nav>
   );
 }
