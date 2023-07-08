@@ -42,12 +42,21 @@ input[type='search']::-webkit-search-results-decoration {
 
 .main {
   margin-left: 240px;
-  padding-top: 145px;
+  padding-top: 140px;
+  max-width: 645px;
 }
 
 @media handheld, only screen and (max-width: 1265px) {
   .main {
     margin-left: 192px;
+  }
+}
+
+@media handheld, only screen and (max-width: 850px) {
+  .main {
+    width: 95%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
 

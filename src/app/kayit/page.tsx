@@ -3,12 +3,12 @@
 import { range } from '@/util/range';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 
 export default function page() {
   const birthday = range(1, 31);
   const years = range(1900, 2006).reverse();
-  const [gender, setGender] = useState('');
+  const [gender, setGender] = useState('x');
   const [pw, setPw] = useState('');
   function hasLowerCase(str: string) {
     return str.toUpperCase() != str;
@@ -20,23 +20,25 @@ export default function page() {
     return /\d/.test(str);
   }
   return (
-    <section className="mx-6">
+    <section className="max-w-sm">
       <h1 className="font-extrabold text-xl mb-8">yeni kullanıcı kaydı</h1>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="flex flex-col gap-4 w-80 mb-8"
+        className="flex flex-col gap-4 mb-8"
       >
         <label htmlFor="nick">nick</label>
         <input
           className="p-2 rounded-sm focus:outline-none text-black"
           type="text"
           name="nick"
+          required
         />
         <label htmlFor="e-mail">e-mail</label>
         <input
           className="p-2 rounded-sm focus:outline-none text-black"
           type="email"
           name="e-mail"
+          required
         />
         <div>
           <h2>doğum tarihi</h2>
@@ -44,6 +46,7 @@ export default function page() {
           <select
             className="p-2 rounded-sm text-black focus:outline-dotted mr-2"
             name="doğum"
+            required
           >
             <option></option>
             {birthday.map((day) => (
@@ -55,6 +58,7 @@ export default function page() {
           <select
             className="p-2 rounded-sm text-black focus:outline-dotted mr-2"
             name="doğum"
+            required
           >
             <option></option>
             <option value="ocak">ocak</option>
@@ -73,6 +77,7 @@ export default function page() {
           <select
             className="p-2 rounded-sm text-black focus:outline-dotted"
             name="doğum"
+            required
           >
             <option></option>
             {years.map((year) => (
@@ -149,6 +154,7 @@ export default function page() {
             className="p-2 rounded-sm"
             type="password"
             name="şifre"
+            required
             onChange={(e) => setPw(e.target.value)}
           />
           <div className="text-xs">
@@ -160,7 +166,12 @@ export default function page() {
         </div>
         <div className="flex flex-col">
           <label htmlFor="şifre (tekrar)">şifre (tekrar)</label>
-          <input className="p-2 rounded-sm" type="password" name="şifre" />
+          <input
+            className="p-2 rounded-sm"
+            type="password"
+            name="şifre"
+            required
+          />
           <div className="text-xs">
             {hasLowerCase(pw) ? (
               <div className="flex gap-1">
@@ -219,7 +230,10 @@ export default function page() {
         <div className="flex gap-2">
           <input type="checkbox" name="okudum" />
           <label htmlFor="okudum">
-            <Link href={'https://eksisozluk1923.com/registration/eula'}>
+            <Link
+              className="hover:underline"
+              href={'https://eksisozluk1923.com/registration/eula'}
+            >
               ekşi sözlük kullanıcı sözleşmesi
             </Link>
             ni okudum ve kabul ediyorum

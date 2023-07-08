@@ -34,20 +34,20 @@ export default function Navbar({ width }: NavbarProps) {
   };
   return (
     <nav className="flex justify-between items-center text-xs md:font-bold">
-      <button
-        className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
-        onClick={() => setChannel('gündem')}
-      >
-        gündem
-      </button>
-      <button
-        className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
-        onClick={() => setChannel('debe')}
-      >
-        debe
-      </button>
-      {width >= 768 ? (
+      {width >= 850 ? (
         <>
+          <button
+            className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            onClick={() => setChannel('gündem')}
+          >
+            gündem
+          </button>
+          <button
+            className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            onClick={() => setChannel('debe')}
+          >
+            debe
+          </button>
           <button
             className="px-4 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             onClick={() => setChannel('sorunsallar')}
@@ -76,6 +76,20 @@ export default function Navbar({ width }: NavbarProps) {
       ) : (
         <>
           <Link
+            href={'/basliklar/populer'}
+            className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            onClick={() => setChannel('gündem')}
+          >
+            gündem
+          </Link>
+          <Link
+            href={'/debe'}
+            className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            onClick={() => setChannel('debe')}
+          >
+            debe
+          </Link>
+          <Link
             className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             href={'/kanallar'}
           >
@@ -95,7 +109,7 @@ export default function Navbar({ width }: NavbarProps) {
           </Link>
         </>
       )}
-      {width >= 768 && (
+      {width >= 850 && (
         <div className="relative flex items-center">
           <button
             className="px-4 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"

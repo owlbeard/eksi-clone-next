@@ -1,4 +1,4 @@
-export default function randomize(array: Entry[]) {
+export default function randomize(array: any[]) {
   let currentIndex = array.length,
     randomIndex;
 

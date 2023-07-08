@@ -1,29 +1,29 @@
 import Link from 'next/link';
-import Channels from '../../data/channels.json';
+import Channels from '@/data/channels.json';
 
 export default function page() {
   return (
-    <section className="mx-6 flex flex-col gap-2" style={{ maxWidth: '645px' }}>
+    <section className="flex flex-col gap-2 w-full">
       <h1 className="font-extrabold text-xl">kanallar</h1>
       <p>"bugün"de takip etmek istediğiniz kanallar</p>
-      <div className="flex flex-col gap-4">
+      <ul className="flex flex-col gap-4">
         {Channels.map((channel) => {
           return (
-            <div className="flex items-center w-full justify-between px-1 py-4  hover:bg-sourBottomBorder">
+            <li className="w-full flex justify-between items-center px-1 py-4  hover:bg-sourBottomBorder">
               <div className="flex flex-col gap-1">
-                <h2 className="font-semibold text-xl">{channel.name}</h2>
+                <h3 className="font-semibold text-xl">{channel.name}</h3>
                 <p className="text-sourMute text-xs">{channel.description}</p>
               </div>
               <Link
-                className="p-2 rounded-sm border border-sourFormBorder text-white bg-sourChannelButton hover:bg-sourChannelButtonHover"
+                className="p-2 whitespace-nowrap w-auto rounded-sm border border-sourFormBorder text-white bg-sourChannelButton hover:bg-sourChannelButtonHover"
                 href={'/giris'}
               >
                 takip et
               </Link>
-            </div>
+            </li>
           );
         })}
-      </div>
+      </ul>
     </section>
   );
 }

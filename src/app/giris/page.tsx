@@ -4,11 +4,11 @@ import Link from 'next/link';
 
 export default function page() {
   return (
-    <section className="mx-6">
+    <section className="max-w-sm">
       <h1 className="font-extrabold text-xl mb-8">giriş</h1>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="flex flex-col gap-4 w-80 mb-8"
+        className="flex flex-col gap-4 w-full mb-8"
       >
         <label htmlFor="e-mail">e-mail adresi</label>
         <input

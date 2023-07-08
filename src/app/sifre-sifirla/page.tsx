@@ -2,7 +2,7 @@
 
 export default function page() {
   return (
-    <section className="mx-6 flex flex-col gap-4">
+    <section className="flex flex-col gap-4 max-w-sm">
       <h1 className="font-extrabold text-xl">şifre sıfırlama süreci</h1>
       <p className="mb-2">
         e-mail adresinizi doğru girdiğiniz takdirde size bazı güzellikler
@@ -10,7 +10,7 @@ export default function page() {
       </p>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="flex flex-col gap-4 w-80 mb-8"
+        className="flex flex-col gap-4 w-full mb-8"
       >
         <label htmlFor="email">email'im şuydu</label>
         <input className="p-2 rounded-sm" type="email" name="email" />

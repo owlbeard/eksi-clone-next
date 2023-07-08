@@ -1,92 +1,136 @@
 [
-  { "channel": "müzik", "name": "pena", "entryCount": 123, "hot": true },
-  { "channel": "müzik", "name": "sourtimes", "entryCount": 23, "hot": true },
+  {
+    "channel": "müzik",
+    "name": "pena",
+    "entryCount": 123,
+    "hot": true,
+    "id": 1
+  },
+  {
+    "channel": "müzik",
+    "name": "sourtimes",
+    "entryCount": 23,
+    "hot": true,
+    "id": 2
+  },
   {
     "channel": "siyaset",
     "name": "halk için halka rağmen",
     "entryCount": 456,
-    "hot": true
+    "hot": true,
+    "id": 3
   },
   {
     "channel": "programlama",
     "name": "the odin project",
     "entryCount": 45,
-    "hot": true
+    "hot": true,
+    "id": 4
   },
-  { "channel": "programlama", "name": "react", "entryCount": 67, "hot": true },
+  {
+    "channel": "programlama",
+    "name": "react",
+    "entryCount": 67,
+    "hot": true,
+    "id": 5
+  },
   {
     "channel": "programlama",
     "name": "javascript",
     "entryCount": 234,
-    "hot": true
+    "hot": true,
+    "id": 6
   },
-  { "channel": "programlama", "name": "html", "entryCount": 121, "hot": true },
+  {
+    "channel": "programlama",
+    "name": "html",
+    "entryCount": 121,
+    "hot": true,
+    "id": 7
+  },
   {
     "channel": "programlama",
     "name": "tailwind css",
     "entryCount": 98,
-    "hot": true
+    "hot": true,
+    "id": 8
   },
   {
     "channel": "programlama",
     "name": "webpack",
     "entryCount": 76,
-    "hot": true
+    "hot": true,
+    "id": 9
   },
   {
     "channel": "siyaset",
     "name": "7 temmuz 2023 vergi zammı yağmuru",
     "entryCount": 1298,
-    "hot": true
+    "hot": true,
+    "id": 10
   },
   { "channel": "programlama", "name": "git", "entryCount": 156, "hot": true },
   {
     "channel": "ilişkiler",
     "name": "nasıl ilişki kurulur",
     "entryCount": 187,
-    "hot": true
+    "hot": true,
+    "id": 11
   },
-  { "channel": "spor", "name": "besiktas", "entryCount": 56, "hot": true },
+  {
+    "channel": "spor",
+    "name": "beşiktaş",
+    "entryCount": 56,
+    "hot": true,
+    "id": 12
+  },
   {
     "channel": "spor",
     "name": "stsl süper lig 2024 şampiyonu",
     "entryCount": 87,
-    "hot": true
+    "hot": true,
+    "id": 13
   },
   {
     "channel": "siyaset",
     "name": "kemal kılıçdaroğlu istifa",
     "entryCount": 39,
-    "hot": true
+    "hot": true,
+    "id": 14
   },
   {
     "channel": "siyaset",
     "name": "neden politikacılara güvenmemeliyiz",
     "entryCount": 139,
-    "hot": true
+    "hot": true,
+    "id": 15
   },
   {
     "channel": "ilişkiler",
     "name": "ilişki ipuçları ve püf noktaları",
     "entryCount": 48,
-    "hot": true
+    "hot": true,
+    "id": 16
   },
   {
     "channel": "spor",
     "name": "novak djokovic",
     "entryCount": 92,
-    "hot": true
+    "hot": true,
+    "id": 17
   },
   {
     "channel": "ilişkiler",
     "name": "eşşek gibi soğanlı dürüm yedim akşamki dateimi unutup",
     "entryCount": 65,
-    "hot": true
+    "hot": true,
+    "id": 18
   },
   {
     "channel": "spor",
     "name": "novak cokoviçin goat olması gerçeği",
     "entryCount": 121,
-    "hot": true
+    "hot": true,
+    "id": 19
   }
 ]

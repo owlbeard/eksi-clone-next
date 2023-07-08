@@ -20,9 +20,17 @@ type Heading = {
   name: string;
   entryCount: number;
   hot: boolean;
+  id: number;
 };
 
 type User = {
   name: string;
   pp: string;
+};
+
+type Problematic = {
+  name: string;
+  heading: string;
+  replies: number;
+  id: number;
 };
