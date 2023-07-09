@@ -37,37 +37,37 @@ export default function Navbar({ width }: NavbarProps) {
       {width >= 850 ? (
         <>
           <button
-            className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="sm:px-10 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             onClick={() => setChannel('gündem')}
           >
             gündem
           </button>
           <button
-            className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="sm:px-10 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             onClick={() => setChannel('debe')}
           >
             debe
           </button>
           <button
-            className="px-4 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="sm:px-10 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             onClick={() => setChannel('sorunsallar')}
           >
             sorunsallar
           </button>
           <button
-            className="px-4 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="sm:px-10 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             onClick={() => setChannel('spor')}
           >
             #spor
           </button>
           <button
-            className="px-4 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="sm:px-10 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             onClick={() => setChannel('ilişkiler')}
           >
             #ilişkiler
           </button>
           <button
-            className="px-4 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="sm:px-10 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             onClick={() => setChannel('siyaset')}
           >
             #siyaset
@@ -77,32 +77,32 @@ export default function Navbar({ width }: NavbarProps) {
         <>
           <Link
             href={'/basliklar/populer'}
-            className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             onClick={() => setChannel('gündem')}
           >
             gündem
           </Link>
           <Link
             href={'/debe'}
-            className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             onClick={() => setChannel('debe')}
           >
             debe
           </Link>
           <Link
-            className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             href={'/kanallar'}
           >
             kanallar
           </Link>
           <Link
-            className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             href={'/giris'}
           >
             giriş
           </Link>
           <Link
-            className="sm:px-4 px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="px-2 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
             href={'/kayit'}
           >
             kayıt ol
@@ -110,12 +110,12 @@ export default function Navbar({ width }: NavbarProps) {
         </>
       )}
       {width >= 850 && (
-        <div className="relative flex items-center">
+        <div className="relative flex items-start h-full">
           <button
-            className="px-4 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="h-full flex items-start px-10 border-b-sourThingsBorder border-transparent hover:border-sour"
             onClick={() => setOpen(!open)}
           >
-            ...
+            <p className="align-middle ">...</p>
           </button>
           {open && (
             <div
@@ -187,7 +187,7 @@ export default function Navbar({ width }: NavbarProps) {
         </div>
       )}
       <Link
-        className="px-2 sm:px-4 pb-2"
+        className="px-2 sm:sm:px-8 pb-2"
         href={'https://www.youtube.com/penavideo'}
       >
         {width >= 950 ? (
@@ -208,7 +208,7 @@ export default function Navbar({ width }: NavbarProps) {
           ></Image>
         )}
       </Link>
-      <Link className="px-2 sm:px-4 pb-2" href={'https://eksiseyler.com/'}>
+      <Link className="px-2 sm:px-8 pb-2" href={'https://eksiseyler.com/'}>
         {width >= 950 ? (
           <Image
             src={

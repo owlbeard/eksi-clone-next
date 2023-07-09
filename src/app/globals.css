@@ -11,12 +11,22 @@ input {
 }
 
 #magnify,
-#alert {
+#alert,
+.entry {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
     contrast(103%);
 }
 
-#check {
+.eksico {
+  fill: #bdbdbd;
+}
+
+.eksico:hover {
+  fill: #82c24a;
+}
+
+#check,
+.entry:hover {
   filter: invert(76%) sepia(15%) saturate(1563%) hue-rotate(48deg)
     brightness(89%) contrast(90%);
 }
