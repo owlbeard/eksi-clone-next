@@ -30,7 +30,7 @@ export default function Header() {
     }
   };
   return (
-    <div className="w-screen h-32 bg-sourBG fixed z-overAll flex flex-col gap-4 top-0 pt-5 border-t-4 border-sour">
+    <div className="w-screen h-32 bg-sourBG fixed z-overAll flex flex-col gap-4 top-0 border-t-4 border-sour">
       <header className="container flex flex-col gap-4 z-50 bg-sourBG pt-5 top-1">
         <div className=" flex sm:gap-4 gap-2 items-center">
           <div className="md:w-48 xl:w-60 p-1">

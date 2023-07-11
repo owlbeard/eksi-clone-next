@@ -50,9 +50,16 @@ input[type='search']::-webkit-search-results-decoration {
   display: none;
 }
 
+.container {
+  max-width: 1240px;
+}
+
 .main {
   margin-left: 240px;
   padding-top: 140px;
+}
+
+.page {
   max-width: 645px;
 }
 

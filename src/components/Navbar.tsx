@@ -120,65 +120,95 @@ export default function Navbar({ width }: NavbarProps) {
           {open && (
             <div
               ref={popupRef}
-              className="text-sm absolute top-full left-0 float-left flex flex-col text-center border border-sourFormBorder w-36"
+              className="text-sm absolute top-full left-0 float-left flex flex-col text-center border border-sourFormBorder w-36 bg-sourBG z-overAll"
             >
               <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                onClick={() => setChannel('tarihte bugün')}
+                onClick={() => {
+                  setChannel('tarihte bugün');
+                  setOpen(!open);
+                }}
               >
                 tarihte bugün
               </button>
               <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                onClick={() => setChannel('seyahat')}
+                onClick={() => {
+                  setChannel('seyahat');
+                  setOpen(!open);
+                }}
               >
                 #seyahat
               </button>
               <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                onClick={() => setChannel('müzik')}
+                onClick={() => {
+                  setChannel('müzik');
+                  setOpen(!open);
+                }}
               >
                 #müzik
               </button>
               <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                onClick={() => setChannel('tv')}
+                onClick={() => {
+                  setChannel('tv');
+                  setOpen(!open);
+                }}
               >
                 #tv
               </button>
               <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                onClick={() => setChannel('haber')}
+                onClick={() => {
+                  setChannel('haber');
+                  setOpen(!open);
+                }}
               >
                 #haber
               </button>
               <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                onClick={() => setChannel('bilim')}
+                onClick={() => {
+                  setChannel('bilim');
+                  setOpen(!open);
+                }}
               >
                 #bilim
               </button>
               <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                onClick={() => setChannel('edebiyat')}
+                onClick={() => {
+                  setChannel('edebiyat');
+                  setOpen(!open);
+                }}
               >
                 #edebiyat
               </button>
               <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                onClick={() => setChannel('ekonomi')}
+                onClick={() => {
+                  setChannel('ekonomi');
+                  setOpen(!open);
+                }}
               >
                 #ekonomi
               </button>
               <button
                 className="w-full p-2 hover:bg-sourBottomBorder"
-                onClick={() => setChannel('başıboşlar')}
+                onClick={() => {
+                  setChannel('başıboşlar');
+                  setOpen(!open);
+                }}
               >
                 başıboşlar
               </button>
               <Link
                 className="w-full p-2 hover:bg-sourBottomBorder"
                 href={'/kanallar'}
+                onClick={() => {
+                  setOpen(!open);
+                }}
               >
                 tüm kanallar
               </Link>

@@ -18,9 +18,11 @@ export default function RootLayout({
       <body className="bg-sourBG text-sourText">
         <Header />
         <div className="container px-8">
-          <main className="main flex min-h-screen flex-col">{children}</main>
+          <main className="main flex min-h-screen flex-col">
+            <div className="page flex-grow">{children}</div>
+            <Footer />
+          </main>
         </div>
-        <Footer />
       </body>
     </html>
   );

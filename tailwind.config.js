@@ -48,6 +48,9 @@ module.exports = {
       zIndex: {
         overAll: '9999',
       },
+      borderRadius: {
+        fifty: '50%',
+      },
     },
   },
   plugins: [],

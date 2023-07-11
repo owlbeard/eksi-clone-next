@@ -4,7 +4,6 @@ import Users from '@/data/users.json';
 import uniqid from 'uniqid';
 import Link from 'next/link';
 import replaceAll from '@/util/replaceAll';
-import Image from 'next/image';
 
 let randomEntries: Entry[] = randomize(Entries);
 
@@ -12,14 +11,32 @@ export default function Home() {
   return (
     <section className="flex flex-col gap-2 w-full">
       {randomEntries.map((entry) => {
+        let pic = '';
+        let user = Users.find((user) => {
+          return user.name === entry.writer;
+        });
+        if (user !== undefined) pic = user.pp;
         return (
-          <div className="flex flex-col gap-2 w-full">
-            <h1>
+          <div key={uniqid()} className="flex flex-col gap-2 w-full">
+            <h1 className="text-lg font-extrabold">
               <Link href={`/basliklar/${replaceAll(entry.heading, ' ', '-')}`}>
-                {entry.heading}
+                {entry.heading?.toLowerCase()}
               </Link>
             </h1>
-            <p>{entry.entry}</p>
+            <p className="text-sm mb-2 whitespace-pre-wrap">
+              {entry.entry?.toLowerCase()}
+              {entry.links ? (
+                <p>
+                  ({entry.links.type}:
+                  <a
+                    href={entry.links.url}
+                    className="text-sourLink"
+                  >{`  ${entry.links.linkText}`}</a>
+                  )
+                </p>
+              ) : null}
+            </p>
+
             <div className="flex justify-between items-center">
               <div className="flex">
                 <button className="border border-sourText hover:border-sour rounded-sm m-1">
@@ -67,6 +84,19 @@ export default function Home() {
                   </svg>
                 </button>
               </div>
+            </div>
+            <div className="flex justify-end items-center gap-2">
+              <div>
+                <p className="text-sourLink text-right text-sm">{user?.name}</p>
+                <p className="text-xs text-sourMute">{entry.date}</p>
+              </div>
+              <img
+                className="rounded-full object-cover h-10 w-10 my-0.5"
+                src={pic}
+                alt={user!.name}
+                width={40}
+                height={40}
+              />
             </div>
           </div>
         );
