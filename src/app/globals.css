@@ -12,9 +12,20 @@ input {
 
 #magnify,
 #alert,
-.entry {
+.entry,
+.white {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
     contrast(103%);
+}
+
+#sour {
+  filter: invert(71%) sepia(57%) saturate(433%) hue-rotate(145deg)
+    brightness(93%) contrast(89%);
+}
+
+#icon {
+  filter: invert(72%) sepia(37%) saturate(644%) hue-rotate(48deg)
+    brightness(90%) contrast(88%);
 }
 
 .eksico {

@@ -238,7 +238,7 @@ export default function Navbar({ width }: NavbarProps) {
           ></Image>
         )}
       </Link>
-      <Link className="px-2 sm:px-8 pb-2" href={'https://eksiseyler.com/'}>
+      <Link className=" pb-2" href={'https://eksiseyler.com/'}>
         {width >= 950 ? (
           <Image
             src={

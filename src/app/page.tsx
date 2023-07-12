@@ -19,21 +19,25 @@ export default function Home() {
         return (
           <div key={uniqid()} className="flex flex-col gap-2 w-full">
             <h1 className="text-lg font-extrabold">
-              <Link href={`/basliklar/${replaceAll(entry.heading, ' ', '-')}`}>
+              <Link
+                href={`/basliklar/${replaceAll(entry.heading, ' ', '-')}?id=${
+                  entry.id
+                }`}
+              >
                 {entry.heading?.toLowerCase()}
               </Link>
             </h1>
             <p className="text-sm mb-2 whitespace-pre-wrap">
               {entry.entry?.toLowerCase()}
               {entry.links ? (
-                <p>
+                <span>
                   ({entry.links.type}:
                   <a
                     href={entry.links.url}
                     className="text-sourLink"
                   >{`  ${entry.links.linkText}`}</a>
                   )
-                </p>
+                </span>
               ) : null}
             </p>
 
@@ -87,16 +91,34 @@ export default function Home() {
             </div>
             <div className="flex justify-end items-center gap-2">
               <div>
-                <p className="text-sourLink text-right text-sm">{user?.name}</p>
-                <p className="text-xs text-sourMute">{entry.date}</p>
+                <Link
+                  href={`/biri/${replaceAll(user!.name, ' ', '-')}?id=${
+                    user!.id
+                  }`}
+                >
+                  <p className="text-sourLink text-right text-sm hover:underline">
+                    {user?.name}
+                  </p>
+                </Link>
+                <Link href={`/entry/${entry.id}`}>
+                  <p className="text-xs text-sourMute hover:underline">
+                    {entry.date}
+                  </p>
+                </Link>
               </div>
-              <img
-                className="rounded-full object-cover h-10 w-10 my-0.5"
-                src={pic}
-                alt={user!.name}
-                width={40}
-                height={40}
-              />
+              <Link
+                href={`/biri/${replaceAll(user!.name, ' ', '-')}?id=${
+                  user!.id
+                }`}
+              >
+                <img
+                  className="rounded-full object-cover h-10 w-10 my-0.5"
+                  src={pic}
+                  alt={user!.name}
+                  width={40}
+                  height={40}
+                />
+              </Link>
             </div>
           </div>
         );

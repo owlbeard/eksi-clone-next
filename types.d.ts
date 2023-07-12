@@ -1,6 +1,6 @@
 type Entry = {
   heading: string;
-  entry_no: number;
+  id: number;
   date: string;
   writer: string;
   entry: string | null;
@@ -26,6 +26,10 @@ type Heading = {
 type User = {
   name: string;
   pp: string;
+  id: number;
+  entries: number;
+  followers: number;
+  followed: number;
 };
 
 type Problematic = {

@@ -33,7 +33,7 @@ export default function Indexes({ width, channel }: IndexesProps) {
           </div>
           {sortedEntries.slice(0, 50).map((entry) => {
             return (
-              <Link href={`/entry/${entry.entry_no}`} key={uniqid()}>
+              <Link href={`/entry/${entry.id}`} key={uniqid()}>
                 <div className="flex justify-between items-center py-3 gap-3 w-full hover:bg-sourBottomBorder">
                   <h3 className="text-sm text-sourText">{entry.heading}</h3>
                 </div>
