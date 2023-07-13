@@ -2,8 +2,13 @@
 
 import { useSearchParams } from 'next/navigation';
 import Problematics from '@/data/problematics.json';
+import Image from 'next/image';
 
-export default function page({ params }: { params: { name: string } }) {
+export default function ProblematicId({
+  params,
+}: {
+  params: { name: string };
+}) {
   const searchParams = useSearchParams();
   const id = searchParams.get('id');
   const [problem] = Problematics.filter((problem) => problem.id === Number(id));
@@ -19,10 +24,12 @@ export default function page({ params }: { params: { name: string } }) {
       <div className="flex text-xs gap-4">
         <div className="flex items-center">
           <button>sıralama şekli</button>
-          <img
-            className="h-4 w-4 white opacity-30"
+          <Image
+            className="white opacity-30"
             src="/menu-down.svg"
             alt="drop down"
+            height={16}
+            width={16}
           />
         </div>
         <button>soru sor</button>
