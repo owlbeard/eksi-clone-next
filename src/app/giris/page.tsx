@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function page() {
   return (
-    <section className="max-w-sm">
+    <section className="md:max-w-sm w-full">
       <h1 className="font-extrabold text-xl mb-8">giriş</h1>
       <form
         onSubmit={(e) => e.preventDefault()}

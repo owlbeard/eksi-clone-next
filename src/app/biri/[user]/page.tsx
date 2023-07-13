@@ -125,7 +125,7 @@ export default function page({ params }: { params: { name: string } }) {
             });
             if (user !== undefined) pic = user.pp;
             return (
-              <div key={uniqid()} className="flex flex-col gap-2 w-full">
+              <div key={uniqid()} className="flex flex-col gap-2 w-full mt-4">
                 <h1 className="text-lg font-extrabold">
                   <Link
                     href={`/basliklar/${replaceAll(
@@ -159,18 +159,19 @@ export default function page({ params }: { params: { name: string } }) {
                         viewBox="0 0 24 24"
                         className="eksico h-4 w-4 cursor-pointer"
                       >
-                        <title>arrow-up-thin</title>
+                        <title>şükela!</title>
                         <path d="M7.03 9.97H11.03V18.89L13.04 18.92V9.97H17.03L12.03 4.97Z" />
                       </svg>
                     </button>
 
-                    <button className="border border-sourText hover:border-sour rounded-sm m-1">
+                    <button className="border border-sourText hover:border-sourBad rounded-sm m-1">
                       <svg
+                        id="sourBad"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
-                        className="eksico h-4 w-4 cursor-pointer"
+                        className="h-4 w-4 cursor-pointer"
                       >
-                        <title>arrow-down-thin</title>
+                        <title>çok kötü</title>
                         <path d="M7.03 13.92H11.03V5L13.04 4.97V13.92H17.03L12.03 18.92Z" />
                       </svg>
                     </button>
@@ -182,7 +183,7 @@ export default function page({ params }: { params: { name: string } }) {
                         viewBox="0 0 24 24"
                         className="eksico h-4 w-4 cursor-pointer"
                       >
-                        <title>export-variant</title>
+                        <title>share</title>
                         <path d="M12,1L8,5H11V14H13V5H16M18,23H6C4.89,23 4,22.1 4,21V9A2,2 0 0,1 6,7H9V9H6V21H18V9H15V7H18A2,2 0 0,1 20,9V21A2,2 0 0,1 18,23Z" />
                       </svg>
                       <div></div>
@@ -191,9 +192,9 @@ export default function page({ params }: { params: { name: string } }) {
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
-                        className="eksico h-4 w-4 cursor-pointer"
+                        className="h-4 w-4 cursor-pointer eksico"
                       >
-                        <title>dots-horizontal</title>
+                        <title>diğer</title>
                         <path d="M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z" />
                       </svg>
                     </button>

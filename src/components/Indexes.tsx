@@ -70,10 +70,11 @@ export default function Indexes({ width, channel }: IndexesProps) {
             <div className="flex-grow h-full border-b border-b-sourFormBorder"></div>
           </div>
           {Problematics.slice(0, 50).map((problematic) => {
+            let regex = /\?/g;
             return (
               <Link
-                href={`/sorunsallar/${replaceAll(
-                  problematic.name,
+                href={`/sorunsal/${replaceAll(
+                  problematic.name.replace(regex, ''),
                   ' ',
                   '-'
                 )}?id=${problematic.id}`}

@@ -20,7 +20,7 @@ export default function page() {
     return /\d/.test(str);
   }
   return (
-    <section className="max-w-sm">
+    <section className="md:max-w-sm w-full">
       <h1 className="font-extrabold text-xl mb-8">yeni kullanıcı kaydı</h1>
       <form
         onSubmit={(e) => e.preventDefault()}

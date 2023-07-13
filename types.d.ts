@@ -36,5 +36,6 @@ type Problematic = {
   name: string;
   heading: string;
   replies: number;
+  likes: number;
   id: number;
 };

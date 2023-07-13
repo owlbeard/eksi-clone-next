@@ -23,12 +23,18 @@ input {
     brightness(93%) contrast(89%);
 }
 
+#sourBad:hover {
+  filter: invert(47%) sepia(82%) saturate(4297%) hue-rotate(347deg)
+    brightness(104%) contrast(101%);
+}
+
 #icon {
   filter: invert(72%) sepia(37%) saturate(644%) hue-rotate(48deg)
     brightness(90%) contrast(88%);
 }
 
-.eksico {
+.eksico,
+#sourBad {
   fill: #bdbdbd;
 }
 

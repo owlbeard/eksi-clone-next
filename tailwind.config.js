@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         sour: '#82C24A',
+        sourBad: '#FF5222',
         sourBG: '#2D2D2D',
         sourText: '#BDBDBD',
         sourMute: '#666',
