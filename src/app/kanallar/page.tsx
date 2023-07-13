@@ -6,9 +6,7 @@ export default function Channel() {
   return (
     <section className="flex flex-col gap-2 w-full">
       <h1 className="font-extrabold text-xl">kanallar</h1>
-      <p className="text-xs">
-        "bugün&ldquo;de takip etmek istediğiniz kanallar
-      </p>
+      <p className="text-xs">"bugün'de takip etmek istediğiniz kanallar</p>
       <ul className="flex flex-col gap-4">
         {Channels.map((channel) => {
           return (
