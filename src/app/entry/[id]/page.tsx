@@ -8,7 +8,7 @@ import Link from 'next/link';
 import uniqid from 'uniqid';
 import { useSearchParams } from 'next/navigation';
 
-export default function page({ params }: { params: { name: string } }) {
+export default function EntryId({ params }: { params: { name: string } }) {
   const searchParams = useSearchParams();
   const id = searchParams.get('id');
   const [entry] = Entries.filter((entry) => entry.id === Number(id));

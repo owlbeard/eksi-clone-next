@@ -10,7 +10,7 @@ import uniqid from 'uniqid';
 
 const sortedEntries = Entries.sort((a, b) => b.fav - a.fav);
 
-export default function page({ params }: { params: { name: string } }) {
+export default function HeadingsId({ params }: { params: { name: string } }) {
   const searchParams = useSearchParams();
   const id = searchParams.get('id');
   const [heading] = Headings.filter((heading) => heading.id === Number(id));

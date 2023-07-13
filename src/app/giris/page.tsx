@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-export default function page() {
+export default function Login() {
   return (
     <section className="md:max-w-sm w-full">
       <h1 className="font-extrabold text-xl mb-8">giriş</h1>

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Channels from '@/data/channels.json';
 
-export default function page() {
+export default function Channel() {
   return (
     <section className="flex flex-col gap-2 w-full">
       <h1 className="font-extrabold text-xl">kanallar</h1>

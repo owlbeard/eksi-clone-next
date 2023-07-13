@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function page() {
+export default function SingUp() {
   const birthday = range(1, 31);
   const years = range(1900, 2006).reverse();
   const [gender, setGender] = useState('x');

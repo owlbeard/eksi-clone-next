@@ -9,7 +9,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import replaceAll from '@/util/replaceAll';
 
-export default function page({ params }: { params: { name: string } }) {
+export default function UserId({ params }: { params: { name: string } }) {
   const [page, setPage] = useState('entry');
   const [open, setOpen] = useState(false);
   const searchParams = useSearchParams();

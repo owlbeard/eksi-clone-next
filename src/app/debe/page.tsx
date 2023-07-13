@@ -4,7 +4,7 @@ import uniqid from 'uniqid';
 
 const sortedEntries = Entries.sort((a, b) => b.fav - a.fav);
 
-export default function page() {
+export default function Debe() {
   return (
     <section>
       <div>
