@@ -112,7 +112,7 @@ export default function Navbar({ width }: NavbarProps) {
       {width >= 850 && (
         <div className="relative flex items-start h-full">
           <button
-            className="h-full flex items-start px-10 border-b-sourThingsBorder border-transparent hover:border-sour"
+            className="sm:px-10 pb-2 border-b-sourThingsBorder border-transparent hover:border-sour pb-4"
             onClick={() => setOpen(!open)}
           >
             <p className="align-middle ">...</p>
